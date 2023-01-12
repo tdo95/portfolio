@@ -28,18 +28,18 @@ const Landing = ({ personalInfo }) => {
         A quality-focused <strong>software engineer</strong> who enjoys learning and building great products
       </p>
       <p className={styles.subDescription}>
-        2+ years expereince developing <a className={styles.descriptionLink} href='#projects'>full stack applications</a> and web services, and contributing to <a href="" className={styles.descriptionLink}>open source</a>.
+        2+ years expereince developing <a target='_blank' className={styles.descriptionLink} href='#projects'>full stack applications</a> and web services, and contributing to <a target='_blank' href={personalInfo.links.github} className={styles.descriptionLink}>open source</a>.
       </p>
       <section className={styles.socials}>
-        <a className={`${styles.socialsIcon} ${styles.linkedin}`}href={personalInfo.links.linkedin}>
+        <a target='_blank' className={`${styles.socialsIcon} ${styles.linkedin}`}href={personalInfo.links.linkedin}>
           <FaLinkedinIn /> 
           <span className={styles.hideIconTextMobile}> Linkedin </span>   
         </a>
-        <a className={`${styles.socialsIcon} ${styles.github}`}href={personalInfo.links.github}>
+        <a target='_blank' className={`${styles.socialsIcon} ${styles.github}`}href={personalInfo.links.github}>
           <FaGithub /> 
           <span className={styles.hideIconTextMobile}> Github </span>
         </a>
-        <a className={`${styles.socialsIcon} ${styles.email}`}href={personalInfo.links.email}> 
+        <a target='_blank' className={`${styles.socialsIcon} ${styles.email}`}href={personalInfo.links.email}> 
           <FaEnvelope /> 
         <span className={styles.hideIconTextMobile}> Email </span>
         </a>

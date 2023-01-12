@@ -31,8 +31,8 @@ const Projects = ({projects}) => {
             <div className={styles.projectTech}>
               {item.tech.map((label, i) => (<span key={i} className={styles.techItem}>{label}</span>))}
             </div>
-            <a href={item.githubLink} className={styles.links}>Github</a>
-            <a href={item.demoLink} className={`${styles.links} ${styles.demoLink}`}>View Demo</a>
+            <a target='_blank' href={item.githubLink} className={styles.links}>Github</a>
+            <a target='_blank' href={item.demoLink} className={`${styles.links} ${styles.demoLink}`}>View Demo</a>
           </div>
           <img src={modules[`/src/assets/${item.image}`].default} alt="Project Card Image" className={styles.image}/>
         </div>

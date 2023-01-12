@@ -13,9 +13,9 @@ const Footer = ({ personalInfo }) => {
   return (
     <footer className={styles.default}> &copy; Designed and Built by Tee O.
       <section className={styles.socials}>
-        <a href={personalInfo.links.linkedin} className={styles.linkedin}> <FaLinkedinIn/> </a>
-        <a href={personalInfo.links.github} className={styles.github}> <FaGithub/> </a>
-        <a href={personalInfo.links.email} className={styles.email}> <FaEnvelope/> </a>
+        <a target='_blank' href={personalInfo.links.linkedin} className={styles.linkedin}> <FaLinkedinIn/> </a>
+        <a target='_blank' href={personalInfo.links.github} className={styles.github}> <FaGithub/> </a>
+        <a target='_blank' href={personalInfo.links.email} className={styles.email}> <FaEnvelope/> </a>
       </section>
     </footer>
   )
