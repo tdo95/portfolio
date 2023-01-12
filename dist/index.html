@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/site-favicon.png" />
+    <meta property="og:image" content="/home_thumb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Tee O. | Software Engineer</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+
+      }
+      #loader {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(#3d31d6, #826ffa );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        transition: visibility 1s, opacity 1s;
+      }
+      #spinner {
+        animation: pulse 1s infinite ease-in-out;
+        height: 30px;
+        width: 30px;
+        background-color: #0d0a32;
+        border-radius: 50px;
+        display: relative;
+        opacity: .7;
+      }
+      #loader::after {
+        content: '';
+        display: block;
+        height: 30px;
+        width: 30px;
+        background-color: #0d0a32;
+        opacity: .7;
+        border-radius: 50px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(2);
+          opacity: 0.1;
+
+        }
+        
+      }
+    </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-c2913538.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-c17b9d76.css">
+  </head>
+  <body>
+    <section id="loader">
+      <div id="spinner"></div>
+    </section>
+    <div id="root"></div>
+    
+  </body>
+</html>
