@@ -12,12 +12,12 @@ const Skills = ({skills }) => {
     skillItem: 'py-1 px-2  rounded bg-white text-primary-blue  text-center'
 
   }
-  const skillsElements = skills.map(item => (
-    <div className={styles.skillsCategory}>
+  const skillsElements = skills.map((item, i) => (
+    <div key={i} className={styles.skillsCategory}>
           <h3 className={styles.skillsHeading}>{item.categoryName}</h3>
           <div className={styles.divider}></div>
           <ul className={styles.skillsList}>
-            {item.values.map(name => (<li className={styles.skillItem}>{name}</li>))}
+            {item.values.map( (name, i) => (<li key={i} className={styles.skillItem}>{name}</li>))}
           </ul>
         </div>
   ))

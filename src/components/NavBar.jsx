@@ -2,7 +2,8 @@ import React from 'react'
 import HamburgerIcon from './HamburgerIcon'
 import LinksMenu from './LinksMenu'
 import { useState } from 'react'
-// import logo from '../assets/logo.png'
+import logo from '../assets/site-logo.png'
+
 
 const NavBar = ({scroll}) => {
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ const NavBar = ({scroll}) => {
 
   return (
     <header className={`${styles.default} ${styles.scrollStyle}`}>
-        <img className={styles.logoImage} src="/site-logo.png" alt="Tee O. Logo" />
+        <img className={styles.logoImage} src={logo} alt="Tee O. Logo" />
         <span className={styles.logoDescription}>Tee O.</span>
         <LinksMenu isMobile={false} open={open} />
 

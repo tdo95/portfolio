@@ -1,7 +1,13 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 
+//https://www.reddit.com/r/vuejs/comments/y9xz5h/not_able_to_use_dynamic_images_in_the_vite_build/
+//https://vitejs.dev/guide/features.html#glob-import
+//Enables dynamic module imports, which I've defined to import everything from the asset folder
+const modules = import.meta.glob("/src/assets/*", { eager: true });
+
 const Projects = ({projects}) => {
+
   const styles = {
     default: 'py-5 min-h-[500px]',
     heading: 'max-[375px]:text-4xl flex text-5xl font-bold text-white my-5 after:block after:bg-primary-purple after:w-10 after:h-1 after:flex-1 gap-3 gap-x-3 items-center',
@@ -17,18 +23,18 @@ const Projects = ({projects}) => {
     projectInfo: '',
   
   }
-  const projectElements = projects.map(item => (
-    <div className={styles.projectCard}>
+  const projectElements = projects.map((item, i) => (
+    <div key={i} className={styles.projectCard}>
           <div className={styles.projectInfo}>
             <h3 className={styles.projectTitle}>{item.title}</h3>
             <p className={styles.projectText}>{item.description}</p>
             <div className={styles.projectTech}>
-              {item.tech.map(label => (<span className={styles.techItem}>{label}</span>))}
+              {item.tech.map((label, i) => (<span key={i} className={styles.techItem}>{label}</span>))}
             </div>
             <a href={item.githubLink} className={styles.links}>Github</a>
             <a href={item.demoLink} className={`${styles.links} ${styles.demoLink}`}>View Demo</a>
           </div>
-          <img src={item.image} alt="Project Card Image" className={styles.image}/>
+          <img src={modules[`/src/assets/${item.image}`].default} alt="Project Card Image" className={styles.image}/>
         </div>
   ))
   return (

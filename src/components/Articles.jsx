@@ -11,8 +11,8 @@ const Articles = ({ articles }) => {
     cardType: 'px-2 py-1 bg-primary-purple/30  rounded text-sm my-4 text-gray-100 w-fit',
     cardImage: 'shadow shadow-md shadow-black',
   }
-  const articlesElements = articles.map(item => (
-    <a href={item.link}><div className={styles.card}>      
+  const articlesElements = articles.map((item, i) => (
+    <a key={i} href={item.link}><div className={styles.card}>      
           <h3 className={styles.cardTitle}>{item.title}</h3>
           <p className={styles.cardDescription}>{item.description}</p>
           <span className={styles.cardType}>{item.type}</span>

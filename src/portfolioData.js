@@ -15,7 +15,7 @@ export const portfolio = {
             tech: ['HTML', 'CSS', 'JavaScript', 'Node', 'Express', 'Spotify API'],
             githubLink: 'https://github.com/tdo95/discolist',
             demoLink: 'https://discolist.cyclic.app/',
-            image: '/discolistthumb.png',
+            image: 'discolistthumb.png',
 
         },
         {
@@ -24,7 +24,7 @@ export const portfolio = {
             tech: ['HTML', 'EJS', 'CSS', 'JavaScript', 'Node', 'Express', 'Unsplash API', 'Roadgoat API'],
             githubLink: 'https://github.com/tdo95/travlr',
             demoLink: 'https://travlr.onrender.com/',
-            image: '/travlr_thumbnail.png',
+            image: 'travlr_thumbnail.png',
 
         },
         {
@@ -33,7 +33,7 @@ export const portfolio = {
             tech: ['HTML', 'EJS', 'CSS', 'JavaScript', 'Node', 'Express', 'Axios', 'Cheerio'],
             githubLink: 'https://github.com/tdo95/countries-of-the-world-api',
             demoLink: 'https://countries-of-the-world.cyclic.app/',
-            image: '/countries_thumb.png',
+            image: 'countries_thumb.png',
 
         },
 
