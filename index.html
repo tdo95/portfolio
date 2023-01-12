@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/site-favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/site-favicon.png" />
     <meta property="og:image" content="/home_thumb.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -26,7 +26,6 @@
         transition: visibility 1s, opacity 1s;
       }
       #spinner {
-        -webkit-animation: pulse 1s infinite ease-in-out;
         animation: pulse 1s infinite ease-in-out;
         height: 30px;
         width: 30px;
@@ -52,11 +51,9 @@
 
       @keyframes pulse {
         0% {
-          -webkit-transform: scale(1);
           transform: scale(1);
         }
         100% {
-          -webkit-transform: scale(2);
           transform: scale(2);
           opacity: 0.1;
 
@@ -64,12 +61,14 @@
         
       }
     </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-c2913538.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-c17b9d76.css">
   </head>
   <body>
     <section id="loader">
       <div id="spinner"></div>
     </section>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    
   </body>
 </html>
