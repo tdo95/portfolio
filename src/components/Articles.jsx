@@ -4,7 +4,7 @@ const Articles = ({ articles }) => {
   const styles = {
     default: 'py-5 min-h-[500px]',
     heading: 'max-[375px]:text-4xl flex text-5xl font-bold text-white my-5 after:block after:bg-primary-purple after:w-10 after:h-1 after:flex-1 gap-3 gap-x-3 items-center',
-    articleContainer: 'flex flex-wrap py-8 gap-6 items-stretch',
+    articleContainer: 'flex flex-wrap py-8 gap-6 items-stretch max-[425px]:justify-center',
     card: 'flex flex-col rounded-lg border-white border-2 w-80 p-4 hover:bg-white [&:hover>*]:text-primary-blue h-full',
     cardTitle: 'text-xl font-bold text-gray-100 my-2',
     cardDescription: '',
