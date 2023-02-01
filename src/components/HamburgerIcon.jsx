@@ -4,7 +4,7 @@ import React from 'react'
 const HamburgerIcon = ({open, toggleNav}) => {
   
     const styles = {
-        default: 'flex flex-col justify-around ml-auto h-5 z-10 md:hidden cursor-pointer ',
+        default: 'flex flex-col justify-around ml-auto mr-2 h-5 z-10 md:hidden cursor-pointer ',
         backgroundColor: `${open ? 'bg-white ' : 'bg-primary-purple '}`,
         lineStyle: 'w-[20px] h-0.5 origin-[.1px] transition-all duration-300',
         firstLine: `${open ? 'rotate-45 ' : 'rotate-0 '}`,

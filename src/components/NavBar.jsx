@@ -13,7 +13,7 @@ const NavBar = ({scroll}) => {
   const styles = {
     default: 'flex p-4 h-20 items-center transition-all duration-300 text-white',
     scrollStyle: `${scroll > 10 ? 'shadow-md shadow-black' : ''}`,
-    logoImage: 'h-full p-2 w-auto',
+    logoImage: 'p-2 w-[55px]',
     logoDescription: 'font-medium text-xl ml-2',
   }
 
