@@ -21,9 +21,3 @@
     transition: .5s forwards;
     transition-property: background-size, background-image;
 }
-
-/* Scroll bar styling */
-section::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-}
