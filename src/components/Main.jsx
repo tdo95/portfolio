@@ -11,19 +11,17 @@ import { portfolio } from '../portfolioData'
 const Main = ({setScroll}) => {
     useEffect(() => {
         // This useEffect creates a dropdown shadow on the nav bar when the main container is scrolled
-        const main = document.querySelector('.main-section')
-
-        function watchScroll() { setScroll(main.scrollTop);}
+        function watchScroll() {console.log(window.scrollY); setScroll(window.scrollY)}
         
-        main.addEventListener('scroll', watchScroll )
+        window.addEventListener('scroll', watchScroll )
 
         return function () {
-            main.removeEventListener('scroll', watchScroll)
+            window.removeEventListener('scroll', watchScroll)
         }
     }, [])
 
     const styles = {
-      sectionLayout: 'main-section scroll-smooth overflow-y-scroll flex-1 px-10'
+      sectionLayout: 'flex-1 px-10 mt-20'
     }
   return (
     <section className={styles.sectionLayout}>

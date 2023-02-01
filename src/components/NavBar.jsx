@@ -11,7 +11,7 @@ const NavBar = ({scroll}) => {
     setOpen(!open)
   }
   const styles = {
-    default: 'flex p-4 h-20 items-center transition-all duration-300 text-white',
+    default: 'flex p-4 h-20 items-center transition-all duration-300 text-white w-full bg-primary-blue fixed z-[2]',
     scrollStyle: `${scroll > 10 ? 'shadow-md shadow-black' : ''}`,
     logoImage: 'p-2 w-[52px] ',
     logoDescription: 'font-medium text-xl ml-2',
